@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name            = "boltdown"
-version         = "0.1.0"
+version         = "0.1.1"
 description     = "Python torrent download manager wrapping aria2c via JSON-RPC"
 readme          = "README.md"
 license         = "MIT"
