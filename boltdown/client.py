@@ -72,6 +72,7 @@ class BoltdownClient:
         extra_aria2_args: list[str] | None = None,
     ) -> None:
         self._download_dir  = str(Path(download_dir).resolve())
+        os.makedirs(self._download_dir, exist_ok=True)
         self._secret        = aria2_secret
         self._port          = rpc_port
         self._monitor_interval = monitor_interval
